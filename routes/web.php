@@ -19,4 +19,7 @@ Route::get('/', function () {
 
 Route::get('/bienvenido',[BienvenidoController:: class, 'Bienvenido'] );
 
+Route::get('/alumnos',[AlumnosController:: class, 'Alumnos'] );
+
+
 
