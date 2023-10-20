@@ -1,6 +1,8 @@
 <?php
-use App\Http\Controllers\BienvenidoController;
+
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\bienvenidoController;
+use App\Http\Controllers\AlumnosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/bienvenido',[BienvenidoController:: class, 'Bienvenido'] );
+route::get('/bienvenido', [bienvenidoController:: class, 'bienvenido']);
 
-Route::get('/alumnos',[AlumnosController:: class, 'Alumnos'] );
+route::get('/inicio', [bienvenidoController:: class, 'inicio']);
 
-
-
+route::get('/alumnos', [AlumnosController:: class, 'alumnos']);
